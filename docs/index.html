@@ -235,24 +235,24 @@
         </div>
 
         <figure class="result-figure" style="margin-top: 1.5rem;">
-          <img src="static/images/mar_dumbbell.png"
-               alt="Dumbbell plot of per-model Misfired Alignment Rate under direct and primed conditions.">
-          <figcaption class="figure-caption has-text-centered">
-            <strong>Per-model MAR: direct vs. primed.</strong> Each row is one of the 25
-            LLMs; the connected markers show MAR under the direct condition and under
-            controlled priming. Alignment-induced cues substantially amplify MAR across
-            models, showing the failures can be induced by safety-related framing rather
-            than being artifacts of individual examples.
-          </figcaption>
-        </figure>
-
-        <figure class="result-figure" style="margin-top: 2.5rem;">
           <img src="static/images/per_category_heatmap.png"
                alt="Heatmap of Misfired Alignment Rate broken down by demographic category and model.">
           <figcaption class="figure-caption has-text-centered">
             <strong>MAR by demographic category and model.</strong> Misfired alignment is
             not confined to a single group: it appears across demographic categories, with
             the intensity varying by both model and category.
+          </figcaption>
+        </figure>
+
+        <figure class="result-figure" style="margin-top: 2.5rem;">
+          <img src="static/images/mar_dumbbell.png"
+               alt="Dumbbell plot of per-model Misfired Alignment Rate under direct and primed conditions.">
+          <figcaption class="figure-caption has-text-centered">
+            <strong>Priming amplifies MAR: direct vs. primed.</strong> Each row is one of the
+            25 LLMs; the connected markers show MAR under the direct condition and under
+            controlled priming. Alignment-induced cues substantially amplify MAR across
+            models, showing the failures can be induced by safety-related framing rather
+            than being artifacts of individual examples.
           </figcaption>
         </figure>
       </div>
