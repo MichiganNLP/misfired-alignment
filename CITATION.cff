@@ -1,0 +1,45 @@
+cff-version: 1.2.0
+message: "If you use this code or the VETO benchmark, please cite the paper below."
+title: "The Wrong Kind of Right: Quantifying and Localizing Misfired Alignment in LLMs"
+abstract: >-
+  Alignment aims to ensure that large language models (LLMs) behave safely and
+  reliably, including by avoiding unsafe inferences. However, such
+  safety-oriented behaviors can misfire: models may reject warranted conclusions
+  even when they are explicitly supported by context. We call this failure mode
+  misfired alignment. We introduce VETO, a benchmark of 2,032 BBQ-derived
+  contrastive pairs, and the Misfired Alignment Rate (MAR) metric, benchmark 25
+  LLMs, and localize a late-layer suppression mechanism through mechanistic
+  analysis.
+type: software
+authors:
+  - given-names: Naihao
+    family-names: Deng
+    affiliation: "University of Michigan"
+  - given-names: Yiming
+    family-names: Feng
+    affiliation: "University of Michigan"
+  - given-names: Chimaobi
+    family-names: Okite
+    affiliation: "University of Michigan"
+  - given-names: Kaijian
+    family-names: Zou
+    affiliation: "University of Michigan"
+  - given-names: Lu
+    family-names: Wang
+    affiliation: "University of Michigan"
+  - given-names: Rada
+    family-names: Mihalcea
+    affiliation: "University of Michigan"
+  - given-names: Yulong
+    family-names: Chen
+    affiliation: "University of Cambridge"
+repository-code: "https://github.com/MichiganNLP/misfired-alignment"
+license: MIT
+year: 2026
+# TODO: add the arXiv identifier / DOI once the preprint is posted.
+# preferred-citation:
+#   type: article
+#   title: "The Wrong Kind of Right: Quantifying and Localizing Misfired Alignment in LLMs"
+#   year: 2026
+#   journal: "arXiv preprint"
+#   url: "https://arxiv.org/abs/XXXX.XXXXX"

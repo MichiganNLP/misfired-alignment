@@ -1,0 +1,33 @@
+# Local machine config (copy scripts/config.env.example -> scripts/config.env)
+scripts/config.env
+
+# Data & results are distributed via HuggingFace, not git
+data/
+results/
+!data/README.md
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+.pytest_cache/
+.ruff_cache/
+
+# Environments
+.venv/
+venv/
+env/
+.env
+
+# OS / editor
+.DS_Store
+*.swp
+
+# LaTeX build artifacts
+*.aux
+*.bbl
+*.blg
+*.out
+*.log
+*.synctex.gz

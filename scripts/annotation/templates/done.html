@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Annotation Complete</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Georgia, serif;
+      background: #f7f7f5;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+    .card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+      max-width: 560px;
+      width: 100%;
+      padding: 2.8rem 3rem;
+      text-align: center;
+    }
+    .checkmark {
+      font-size: 3.5rem;
+      margin-bottom: 1rem;
+    }
+    h1 { font-size: 1.5rem; margin-bottom: 0.5rem; color: #1a1a1a; }
+    .sub { color: #666; font-size: 0.97rem; margin-bottom: 2rem; line-height: 1.6; }
+    .stats {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      margin-bottom: 2rem;
+    }
+    .stat {
+      background: #f0f4ff;
+      border-radius: 8px;
+      padding: 0.9rem 1.4rem;
+      text-align: center;
+    }
+    .stat-num { font-size: 1.8rem; font-weight: bold; color: #4a6fa5; }
+    .stat-label { font-size: 0.78rem; color: #888; margin-top: 0.15rem; }
+    .download-btn {
+      display: inline-block;
+      padding: 0.75rem 2rem;
+      background: #4a6fa5;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 0.97rem;
+      transition: background 0.2s;
+    }
+    .download-btn:hover { background: #3a5a8a; }
+    .note { margin-top: 1.5rem; font-size: 0.82rem; color: #aaa; line-height: 1.5; }
+  </style>
+</head>
+<body>
+<div class="card">
+  <div class="checkmark">&#10003;</div>
+  <h1>Thank you, {{ name }}!</h1>
+  <p class="sub">You have completed all {{ total }} questions.<br>Your responses have been saved automatically.</p>
+
+  <div class="stats">
+    <div class="stat">
+      <div class="stat-num">{{ n_yes }}</div>
+      <div class="stat-label">Yes answers</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">{{ n_no }}</div>
+      <div class="stat-label">No answers</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">{{ total }}</div>
+      <div class="stat-label">Total</div>
+    </div>
+  </div>
+
+  <a href="/download" class="download-btn">&#8595; Download my results (JSON)</a>
+
+  <p class="note">Your responses are stored on the server. You can also download a copy using the button above.</p>
+</div>
+</body>
+</html>

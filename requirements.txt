@@ -1,0 +1,21 @@
+# Dataset
+datasets>=2.19.0
+
+# Local model inference (synthesis + evaluation)
+transformers>=4.51.0   # 4.51+ required for Qwen3.5 support
+torch>=2.3.0
+accelerate>=0.30.0
+
+# API-based evaluation (optional — only needed for evaluate.py with openai/anthropic)
+openai>=1.0.0
+anthropic>=0.30.0
+
+# Analysis & visualization
+matplotlib>=3.8.0
+numpy>=1.26.0
+pandas>=2.0.0
+scipy>=1.11.0
+
+# Utilities
+requests>=2.31.0
+tqdm>=4.66.0
