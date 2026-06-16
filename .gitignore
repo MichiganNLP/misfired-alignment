@@ -2,7 +2,7 @@
 scripts/config.env
 
 # Data & results are distributed via HuggingFace, not git
-data/
+data/*
 results/
 !data/README.md
 
