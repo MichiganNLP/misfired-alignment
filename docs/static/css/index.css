@@ -1,0 +1,196 @@
+/* Custom styling for the Misfired Alignment project page.
+   Layered on top of Bulma; design adapted from the Nerfies academic page template. */
+
+body {
+  font-family: 'Noto Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.footer .icon-link {
+  font-size: 25px;
+  color: #000;
+}
+
+/* ---- Hero / title ---- */
+.publication-title {
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.author-block {
+  white-space: nowrap;
+}
+
+.publication-authors a:link,
+.publication-authors a:visited {
+  color: #3273dc;
+}
+
+.publication-authors {
+  font-size: 1.15rem;
+}
+
+.publication-links .button {
+  margin: 0.25rem;
+}
+
+.publication-banner {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* ---- Content warning banner ---- */
+.content-warning {
+  border-left: 5px solid #f0a30a;
+  background-color: #fff8e6;
+  border-radius: 6px;
+  padding: 1rem 1.25rem;
+  margin: 1.5rem auto 0 auto;
+  max-width: 900px;
+  color: #5a4a00;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.content-warning .cw-label {
+  font-weight: 700;
+  color: #b5780a;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  margin-right: 0.4rem;
+}
+
+/* ---- Section headings ---- */
+.section .title.is-3 {
+  margin-bottom: 1.25rem;
+}
+
+/* ---- Teaser figure ---- */
+.teaser .teaser-image {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  border-radius: 6px;
+}
+
+.teaser .caption,
+.figure-caption {
+  margin-top: 0.75rem;
+  font-size: 0.95rem;
+  color: #4a4a4a;
+  line-height: 1.5;
+}
+
+/* ---- Prompt cards (teaser example) ---- */
+.prompt-card {
+  border-radius: 8px;
+  padding: 1.25rem 1.4rem;
+  height: 100%;
+  border: 1px solid #e6e6e6;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+}
+
+.prompt-card.stereotyped {
+  background-color: #fdeeee;
+  border-color: #f3c2c2;
+}
+
+.prompt-card.contrast {
+  background-color: #ecf7ee;
+  border-color: #bfe3c6;
+}
+
+.prompt-card .prompt-tag {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-size: 0.8rem;
+  margin-bottom: 0.6rem;
+}
+
+.prompt-card.stereotyped .prompt-tag {
+  color: #c0392b;
+}
+
+.prompt-card.contrast .prompt-tag {
+  color: #2e8b57;
+}
+
+.prompt-card .prompt-text {
+  font-size: 1rem;
+  line-height: 1.5;
+  flex-grow: 1;
+}
+
+.prompt-card .prompt-answer {
+  margin-top: 0.9rem;
+  padding-top: 0.7rem;
+  border-top: 1px dashed rgba(0, 0, 0, 0.15);
+  font-weight: 600;
+}
+
+.prompt-card .prompt-answer .ans-wrong {
+  color: #c0392b;
+}
+
+.prompt-card .prompt-answer .ans-right {
+  color: #2e8b57;
+}
+
+/* ---- Result figures ---- */
+.result-figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  border-radius: 6px;
+  border: 1px solid #ededed;
+}
+
+/* ---- BibTeX ---- */
+.bibtex-section pre {
+  background-color: #f5f5f5;
+  border-radius: 6px;
+  padding: 1.25rem;
+  font-size: 0.9rem;
+  overflow-x: auto;
+  text-align: left;
+}
+
+/* ---- Abstract ---- */
+.abstract-text {
+  text-align: justify;
+  line-height: 1.6;
+}
+
+/* ---- Highlight numbers ---- */
+.key-stats {
+  margin-top: 1.5rem;
+}
+
+.key-stats .stat-box {
+  text-align: center;
+  padding: 1rem;
+}
+
+.key-stats .stat-number {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #3273dc;
+  line-height: 1.1;
+}
+
+.key-stats .stat-label {
+  font-size: 0.9rem;
+  color: #4a4a4a;
+  margin-top: 0.3rem;
+}
+
+@media screen and (max-width: 768px) {
+  .author-block {
+    white-space: normal;
+  }
+}
