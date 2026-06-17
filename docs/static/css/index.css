@@ -27,12 +27,6 @@ body {
   white-space: nowrap;
 }
 
-/* All authors on one line (desktop); wraps on mobile via the media query below. */
-.authors-oneline {
-  white-space: nowrap;
-  font-size: clamp(0.8rem, 2.2vw, 1.05rem);
-}
-
 .author-block {
   white-space: nowrap;
 }
@@ -208,8 +202,7 @@ body {
   .author-block {
     white-space: normal;
   }
-  .title-sub,
-  .authors-oneline {
+  .title-sub {
     white-space: normal;
   }
 }
