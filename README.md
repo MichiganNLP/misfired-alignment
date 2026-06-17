@@ -2,12 +2,23 @@
 
 Code and benchmark for **"The Wrong Kind of Right: Quantifying and Localizing Misfired Alignment in LLMs."**
 
+<p align="center">
+  <a href="http://lit.eecs.umich.edu/misfired-alignment/"><img src="https://img.shields.io/badge/Project_Page-misfired--alignment-2088FF?logo=githubpages&logoColor=white" alt="Project Page"></a>
+  <a href="https://huggingface.co/datasets/MichiganNLP/misfired-alignment"><img src="https://img.shields.io/badge/%F0%9F%A4%97_Dataset-VETO-FFD21E" alt="VETO dataset"></a>
+  <a href="https://huggingface.co/datasets/MichiganNLP/misfired-alignment-eval-results"><img src="https://img.shields.io/badge/%F0%9F%A4%97_Dataset-Eval_Results-FFD21E" alt="Eval-results dataset"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-3DA639" alt="License: MIT"></a>
+  <img src="https://img.shields.io/badge/Python-3.10+-3776AB?logo=python&logoColor=white" alt="Python 3.10+">
+</p>
+<!-- After posting the preprint, add an arXiv badge:
+  <a href="ARXIV_URL"><img src="https://img.shields.io/badge/Paper-arXiv-b31b1b?logo=arxiv&logoColor=white" alt="Paper"></a>
+-->
+
 > ⚠️ **Content warning.** This project studies stereotypes and social biases in
 > LLMs and contains potentially disturbing examples used purely for measurement.
 > Our findings are **not** an argument against alignment — see
 > [`NOTICE.md`](NOTICE.md) for responsible-use guidance and data provenance.
 
-## The phenomenon
+## 🔍 The phenomenon
 
 Ask an instruction-tuned model a question whose answer is unambiguously given in the context — but about a historically stereotyped group:
 
@@ -17,7 +28,7 @@ Many aligned models answer **"no."** Swap the group to the majority (*"Mark is s
 
 We call this **misfired alignment**: a safety-oriented behavior overriding warranted, evidence-supported conclusions. It is distinct from ordinary bias (making *unwarranted* assumptions about a group); here the model *refuses to apply evidence stated directly in the prompt*.
 
-## What's here
+## 📦 What's here
 
 - **VETO** — a benchmark of **2,032 BBQ-derived contrastive prompt pairs** across eight demographic categories (plus a priming-trigger variant).
 - **MAR (Misfired Alignment Rate)** — fraction of pairs (0–100) where the model fails on the stereotype-related prompt but succeeds on its contrastive counterpart.
@@ -25,7 +36,7 @@ We call this **misfired alignment**: a safety-oriented behavior overriding warra
 - **Mechanistic interpretability** localizing a late-layer suppression circuit.
 - A **human-annotation** pipeline for the human baseline.
 
-## Install
+## ⚙️ Install
 
 ```bash
 pip install -r requirements.txt
@@ -42,7 +53,7 @@ environment with sensible fallbacks. Copy and edit the template:
 cp scripts/config.env.example scripts/config.env   # edit PROJ_DIR / HF_HOME / SIF / PYTHON
 ```
 
-## Data
+## 📊 Data
 
 `data/` and `results/` are not in this repo. The benchmark is on the
 HuggingFace Hub (gated — please read [`NOTICE.md`](NOTICE.md) first):
@@ -58,7 +69,7 @@ python scripts/build_pairs_from_bbq.py        # -> data/prompt_pairs_bbq.json (+
 
 See [`data/README.md`](data/README.md) for details.
 
-## Pipeline
+## 🧪 Pipeline
 
 ### I. Evaluation
 
@@ -108,7 +119,7 @@ python scripts/annotation/app.py --host 0.0.0.0 --port 5000
 python scripts/annotation/analyze_annotations.py       # per-annotator stats, MAR, Cohen's kappa
 ```
 
-## Reproducing the paper
+## 📈 Reproducing the paper
 
 ```bash
 python scripts/compute_significance.py    # -> paper significance tables (McNemar tests)
@@ -128,7 +139,7 @@ python scripts/plot_paper_figures.py      # -> main figures (MAR dumbbell, CoT s
 | ICL ablation | `scripts/plot_icl_ablation.py` |
 | Cross-family mechanistic profile | `scripts/plot_mech_cross_family.py` |
 
-## Citation
+## 📚 Citation
 
 ```bibtex
 @article{deng2026misfired,
@@ -141,6 +152,6 @@ python scripts/plot_paper_figures.py      # -> main figures (MAR dumbbell, CoT s
 
 VETO is derived from **BBQ** (Parrish et al., 2022, CC BY 4.0); please also cite BBQ. See [`NOTICE.md`](NOTICE.md).
 
-## License
+## 📄 License
 
 Code: MIT (see [`LICENSE`](LICENSE)). Benchmark data: CC BY 4.0 (inherited from BBQ).
