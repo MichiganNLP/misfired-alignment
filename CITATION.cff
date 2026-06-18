@@ -34,12 +34,27 @@ authors:
     family-names: Chen
     affiliation: "University of Cambridge; University of Aberdeen"
 repository-code: "https://github.com/MichiganNLP/misfired-alignment"
+url: "https://arxiv.org/abs/2606.18656"
 license: MIT
 year: 2026
-# TODO: add the arXiv identifier / DOI once the preprint is posted.
-# preferred-citation:
-#   type: article
-#   title: "The Wrong Kind of Right: Quantifying and Localizing Misfired Alignment in LLMs"
-#   year: 2026
-#   journal: "arXiv preprint"
-#   url: "https://arxiv.org/abs/XXXX.XXXXX"
+preferred-citation:
+  type: article
+  title: "The Wrong Kind of Right: Quantifying and Localizing Misfired Alignment in LLMs"
+  year: 2026
+  journal: "arXiv preprint"
+  url: "https://arxiv.org/abs/2606.18656"
+  authors:
+    - given-names: Naihao
+      family-names: Deng
+    - given-names: Yiming
+      family-names: Feng
+    - given-names: Chimaobi
+      family-names: Okite
+    - given-names: Kaijian
+      family-names: Zou
+    - given-names: Lu
+      family-names: Wang
+    - given-names: Rada
+      family-names: Mihalcea
+    - given-names: Yulong
+      family-names: Chen

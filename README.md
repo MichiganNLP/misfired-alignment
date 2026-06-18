@@ -3,15 +3,13 @@
 Code and benchmark for **"The Wrong Kind of Right: Quantifying and Localizing Misfired Alignment in LLMs."**
 
 <p align="center">
+  <a href="https://arxiv.org/abs/2606.18656"><img src="https://img.shields.io/badge/Paper-arXiv-b31b1b?logo=arxiv&logoColor=white" alt="Paper"></a>
   <a href="http://lit.eecs.umich.edu/misfired-alignment/"><img src="https://img.shields.io/badge/Project_Page-misfired--alignment-2088FF?logo=githubpages&logoColor=white" alt="Project Page"></a>
   <a href="https://huggingface.co/datasets/MichiganNLP/misfired-alignment"><img src="https://img.shields.io/badge/%F0%9F%A4%97_Dataset-VETO-FFD21E" alt="VETO dataset"></a>
   <a href="https://huggingface.co/datasets/MichiganNLP/misfired-alignment-eval-results"><img src="https://img.shields.io/badge/%F0%9F%A4%97_Dataset-Eval_Results-FFD21E" alt="Eval-results dataset"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-3DA639" alt="License: MIT"></a>
   <img src="https://img.shields.io/badge/Python-3.10+-3776AB?logo=python&logoColor=white" alt="Python 3.10+">
 </p>
-<!-- After posting the preprint, add an arXiv badge:
-  <a href="ARXIV_URL"><img src="https://img.shields.io/badge/Paper-arXiv-b31b1b?logo=arxiv&logoColor=white" alt="Paper"></a>
--->
 
 > ⚠️ **Content warning.** This project studies stereotypes and social biases in
 > LLMs and contains potentially disturbing examples used purely for measurement.
@@ -145,7 +143,7 @@ python scripts/plot_paper_figures.py      # -> main figures (MAR dumbbell, CoT s
 @article{deng2026misfired,
   title   = {The Wrong Kind of Right: Quantifying and Localizing Misfired Alignment in LLMs},
   author  = {Deng, Naihao and Feng, Yiming and Okite, Chimaobi and Zou, Kaijian and Wang, Lu and Mihalcea, Rada and Chen, Yulong},
-  journal = {arXiv preprint},
+  journal = {arXiv preprint arXiv:2606.18656},
   year    = {2026}
 }
 ```
